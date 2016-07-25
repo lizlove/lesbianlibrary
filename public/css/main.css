@@ -102,10 +102,10 @@ textarea {
      padding: 0;
      color: #000;
      overflow: hidden;
-     /*background-color: #EEE5ED;*/
-     /*background: url('../img/leslib3.jpeg');
+     background-color: #EEE5ED;
+     /*background: url('../img/leslib3.jpeg'); */
      background-size: cover;
-     background-repeat: no-repeat;*/
+     background-repeat: no-repeat;
    }
 
    .section{
@@ -121,11 +121,10 @@ textarea {
     font-size: 80px;
     line-height: 1.2;
    }
-   .hero h4{
-    color: #000;
-    /*font-family: 'Roboto Mono' ;
+   .hero h4, h5{
+    color: #4a4a4a;
+    font-family: 'Roboto Mono' ;
     font-weight: 300;
-    text-align: right;*/
    }
 
    .fullscreen-bg {
