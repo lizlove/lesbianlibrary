@@ -16,9 +16,12 @@
   "providedServices": {
     "linter": {
       "versions": {
-        "1.0.0": "provideLinter"
+        "3.1.1": "eslint"
       }
     }
   },
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "3.1.1",
+    "eslint-plugin-react": "^5.2.2"
+  }
 }
