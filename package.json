@@ -6,10 +6,19 @@
     "type": "git",
     "url": "https://github.com/lizlove/lesbianlibrary.git"
   },
-  "main": "server.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "compression": "1.6.2",
     "express": "4.14.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
   },
   "license": "MIT"
 }
