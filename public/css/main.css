@@ -103,28 +103,34 @@ textarea {
      color: #000;
      overflow: hidden;
      background-color: #EEE5ED;
-     /*background: url('../img/leslib3.jpeg'); */
      background-size: cover;
      background-repeat: no-repeat;
    }
 
-   .section{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 1%;
-    left: 0;
-    width: 450px;
-    height: 170px;
+   .section {
     margin: auto;
     text-align: center;
     font-size: 80px;
     line-height: 1.2;
+    height: 100%;
    }
    .hero h4, h5{
     color: #4a4a4a;
-    font-family: 'Roboto Mono' ;
+    font-family: 'Roboto Mono';
     font-weight: 300;
+   }
+   .betty {
+     height: auto;
+     width: auto;
+     margin: auto;
+     max-width: 300px;
+   }
+   .flex {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
    }
 
    .fullscreen-bg {
