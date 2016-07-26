@@ -1,14 +1,13 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+* Lesbian Library V1.0.1
+* Copyright 2016
+* www.lesbianlibrary.org
+* Free to use under the MIT license.
+* 07/25/2016
+*/
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 html {
     color: #fff;
@@ -16,27 +15,28 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  overflow: hidden;
+  background-color: #EEE5ED;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+/* Remove text-shadow in selection highlight */
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #EEE5ED;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #EEE5ED;
     text-shadow: none;
 }
-
-/*
- * A better looking default horizontal rule
- */
 
 hr {
     display: block;
@@ -47,12 +47,7 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
+/* Remove the gap at the bottom of their containers */
 audio,
 canvas,
 iframe,
@@ -62,28 +57,21 @@ video {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
+/* Remove default fieldset styles. */
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
+/* Allow only vertical resizing of textareas. */
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
 
+/* Browser Upgrade Prompt
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -91,85 +79,49 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
-   html, body {
-     width: 100%;
-     height: 100%;
-     margin: 0;
-     padding: 0;
-     color: #000;
-     overflow: hidden;
-     background-color: #EEE5ED;
-     background-size: cover;
-     background-repeat: no-repeat;
-   }
-
-   .section {
-    margin: auto;
-    text-align: center;
-    font-size: 80px;
-    line-height: 1.2;
-    height: 100%;
-   }
-   .hero h4, h5{
-    color: #4a4a4a;
-    font-family: 'Roboto Mono';
-    font-weight: 300;
-   }
-   .betty {
-     height: auto;
-     width: auto;
-     margin: auto;
-     max-width: 300px;
-   }
-   .flex {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: 100%;
-   }
-
-   .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+/* Landing Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  line-height: 1.2;
+  height: 100%;
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+.hero h4, h5{
+  color: #4a4a4a;
+  font-family: 'Roboto Mono';
+  font-weight: 300;
+ }
+
+ .betty {
+   height: auto;
+   width: auto;
+   margin: auto;
+   max-width: 100%;
+   margin-bottom: 2rem;
+ }
+
+ .flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+ }
 
 
+ /* Helper Classes
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
+/* Hide visually and from screen readers */
 .hidden {
     display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
+/* Hide only visually, but have it available for screen readers */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -181,12 +133,7 @@ textarea {
     width: 1px;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -197,26 +144,12 @@ textarea {
     width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
+/* Hide visually and from screen readers, but maintain layout */
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
+/* Clearfix: contain floats */
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -227,30 +160,37 @@ textarea {
     clear: both;
 }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
- @media (min-aspect-ratio: 16/9) {
-     .fullscreen-bg__video {
-       width: 100%;
-       height: auto;
-     }
- }
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
- @media (max-aspect-ratio: 16/9) {
-     .fullscreen-bg__video {
-       width: auto;
-       height: 100%;
-     }
- }
- @media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .betty {
+    max-width: 400px;
   }
+}
 
-  .fullscreen-bg__video {
-    display: none;
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .betty {
+    max-width: 450px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .betty {
+    max-width: 500px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .betty {
+    max-width: 550px;
   }
 }
 
@@ -261,11 +201,8 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* Print Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media print {
     *,
@@ -308,11 +245,6 @@ textarea {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
